@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mystudent" class="com.bj.ba01.Student">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="mydate" class="java.util.Date">
+        <property name="time" value="3254346565767"/>
+
+    </bean>
+</beans>

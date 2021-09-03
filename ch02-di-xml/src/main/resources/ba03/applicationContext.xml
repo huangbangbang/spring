@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mystudent" class="com.bj.ba03.Student">
+        <constructor-arg name="myname" value="张三"/>
+        <constructor-arg name="myage" value="20"/>
+        <constructor-arg name="myschool" ref="mychool"/>
+    </bean>
+    <bean id="mystudent2" class="com.bj.ba03.Student">
+        <constructor-arg index="0" value="张三"/>
+        <constructor-arg index="1" value="20"/>
+        <constructor-arg index="2" ref="mychool"/>
+    </bean>
+    <bean id="mychool" class="com.bj.ba03.School">
+        <property name="name" value="baidu1"/>
+        <property name="address" value="addr"/>
+    </bean>
+    <bean id="myfile" class="java.io.File">
+        <constructor-arg name="parent" value="C:\Users\Administrator\Desktop"/>
+        <constructor-arg name="child" value="read.txt"/>
+    </bean>
+</beans>
